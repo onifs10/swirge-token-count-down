@@ -14,7 +14,7 @@ function App() {
             <p className="datetime"><span><img src="assets/Calandarcalender_logo.svg" alt="calender"/></span>29th April, 2021 | 04:00pm UTC +1</p>
         </div>
         <Countdown 
-          date={Date.now() + (Date.parse("Tue Apr 29 2021 GMT+0100 ") - Date.now() )}
+          date={Date.now() + (Date.parse("Tue Apr 29 2021 GMT+0100") - Date.now() )}
           renderer={renderer}
         />
     </div>

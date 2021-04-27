@@ -1,8 +1,7 @@
 import pad_with_zeros  from './functions'
 const renderer = ({ days , hours, minutes, seconds, completed }) => {
  
-  return (completed ?
-    <div> Completed </div> : <div className="timer">
+  return ( <div className="timer">
       <div>
         <div className="time-part">{ pad_with_zeros(days,2)}</div>
         <div>Days</div>
