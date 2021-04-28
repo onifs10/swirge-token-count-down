@@ -3,8 +3,8 @@ import Countdown from 'react-countdown';
 
 function App() {
 
-  const d = new Date(); 
-  const n = d.toUTCString();
+  const date = new Date(); 
+
 
   return (
     <div className="container-outer">
@@ -18,7 +18,7 @@ function App() {
             <p className="datetime"><span><img src="assets/Calandarcalender_logo.svg" alt="calender"/></span>29th April, 2021 | 04:00pm UTC +1</p>
         </div>
         <Countdown 
-          date={Date.now() + (Date.parse("Tue Apr 29 2021 16:00:00 GMT+0100 ") - Date.parse(`${n}+0100`))}
+          date={Date.now() + (Date.parse("Tue Apr 29 2021 16:00:00 GMT+0100 ") - Date.parse(date.toUTCString()))}
           renderer={renderer}
         />
     </div>
